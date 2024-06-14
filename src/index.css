@@ -10,6 +10,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  padding: 40px;
 }
 
 .card {
@@ -23,6 +24,9 @@ body {
 
 .title {
   text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  width: 300px;
 }
 
 .old-price {
@@ -57,4 +61,26 @@ body {
 .rating {
   display: flex;
   gap: 5px;
+}
+
+@media (max-width: 450px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    width: 250px;
+  }
 }

@@ -422,11 +422,10 @@ const App = () => {
   ];
 
   let [state, setState] = useState(products);
-  console.log(state);
-
   return (
     <div className="cards">
       {state.map((item) => {
+        console.log(item);
         return (
           <div className="card">
             <img src={item.thumbnail} alt="" />
