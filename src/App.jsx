@@ -431,10 +431,18 @@ const App = () => {
           <div className="card">
             <img src={item.thumbnail} alt="" />
             <h3 className="title">{item.title}</h3>
-            <p className="old-price">
-              <b>Old Price:</b> {item.price}
-              <b>$</b>
-            </p>
+            <div className="oldP-rating">
+              <p className="old-price">
+                <b>Old Price:</b> {item.price}
+                <b>$</b>
+              </p>
+              <p className="rating">
+                <span>
+                  <i class="fa-solid fa-star star"></i>
+                </span>
+                {item.rating} / 5
+              </p>
+            </div>
             <div className="new-priceSale">
               <p>
                 <b>New Price : </b>

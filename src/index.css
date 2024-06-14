@@ -3,6 +3,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   background-color: cadetblue;
+  padding: 50px;
 }
 .cards {
   display: flex;
@@ -40,4 +41,20 @@ body {
   border-radius: 40px;
   color: #fff;
   font-weight: 600;
+}
+
+.star {
+  color: yellowgreen;
+}
+
+.oldP-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
 }
