@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: cadetblue;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: aqua;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  text-align: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.new-priceSale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale {
+  padding: 10px;
+  background-color: red;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 600;
+}
