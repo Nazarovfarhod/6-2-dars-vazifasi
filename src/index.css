@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 15px;
 }
 
 .sale {
@@ -51,7 +52,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 15px;
 }
 
 .rating {

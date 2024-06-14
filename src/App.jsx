@@ -438,9 +438,9 @@ const App = () => {
               </p>
               <p className="rating">
                 <span>
-                  <i class="fa-solid fa-star star"></i>
+                  <b>Sale : </b>
+                  <span className="sale"> {item.discountPercentage}%</span>
                 </span>
-                {item.rating} / 5
               </p>
             </div>
             <div className="new-priceSale">
@@ -453,8 +453,10 @@ const App = () => {
                 <b>$</b>
               </p>
               <span>
-                <b>Sale : </b>
-                <span className="sale"> {item.discountPercentage}%</span>
+                <span>
+                  <i class="fa-solid fa-star star"></i>
+                </span>
+                {item.rating} / 5
               </span>
             </div>
           </div>
