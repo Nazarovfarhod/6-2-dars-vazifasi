@@ -434,7 +434,7 @@ const App = () => {
           <div className="card">
             <img className="site-thumbnail" src={item.thumbnail} alt="" width={200} />
             <h3 className="title">{item.title}</h3>
-            <div className="oldP-rating">
+            <div className="old-rating">
               <p className="old-price">
                 <b>Old Price:</b> {item.price}
                 <b>$</b>
