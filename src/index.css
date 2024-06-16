@@ -108,13 +108,12 @@ body {
     font-weight: 600;
     width: 250px;
   }
-  .old-rating {
-    display: flex;
-    flex-direction: column;
-  }
   .btns {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .sale-text {
+    display: none;
   }
 }

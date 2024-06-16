@@ -441,7 +441,7 @@ const App = () => {
               </p>
               <p className="rating">
                 <span>
-                  <b>Sale : </b>
+                  <span className="sale-text"><b>Sale : </b></span>
                   <span className="sale"> {item.discountPercentage}%</span>
                 </span>
               </p>
