@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./index.css";
+import Modal from "./modal";
 
 const App = () => {
   const products = [
@@ -420,12 +421,15 @@ const App = () => {
         "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/thumbnail.png",
     },
   ];
-
+  let [showModal, setShowModal] = useState(false);
   let [state, setState] = useState(products);
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <div className="cards">
       {state.map((item) => {
-        console.log(item);
         return (
           <div className="card">
             <img src={item.thumbnail} alt="" />
@@ -458,9 +462,19 @@ const App = () => {
                 {item.rating} / 5
               </span>
             </div>
+            <button onClick={() => setShowModal(true)}>Open</button>
           </div>
         );
       })}
+      {showModal && (
+        <Modal closeModal={closeModal}>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            iste delectus quis illum itaque. Ullam ex quia, exercitationem eaque
+            fugiat aut vero incidunt at odio, quos ad natus tempore repudiandae?
+          </p>
+        </Modal>
+      )}
     </div>
   );
 };
