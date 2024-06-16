@@ -4,7 +4,7 @@ function Modal({ children, closeModal }) {
   return (
     <div className="modal-backdrop">
       <div className="modal">
-        {children} <button onClick={() => closeModal()}>Close</button>
+        {children} <button className="close-btn" onClick={() => closeModal()}>Close</button>
       </div>
     </div>
   );

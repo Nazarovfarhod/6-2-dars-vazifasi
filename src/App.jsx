@@ -432,7 +432,7 @@ const App = () => {
       {state.map((item) => {
         return (
           <div className="card">
-            <img src={item.thumbnail} alt="" />
+            <img className="site-thumbnail" src={item.thumbnail} alt="" width={200} />
             <h3 className="title">{item.title}</h3>
             <div className="oldP-rating">
               <p className="old-price">
@@ -462,7 +462,7 @@ const App = () => {
                 {item.rating} / 5
               </span>
             </div>
-            <button onClick={() => setShowModal(true)}>Open</button>
+            <div className="btns"><button className="open-btn" onClick={() => setShowModal(true)}>Open</button></div>
           </div>
         );
       })}
