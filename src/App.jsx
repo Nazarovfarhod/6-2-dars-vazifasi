@@ -427,12 +427,22 @@ const App = () => {
   const closeModal = () => {
     setShowModal(false);
   };
+
+  const closeModall = (e) => {
+    if (e.target.className === "modal-backdrop") setShowModal(false);
+    if (e.key === "Escape") setShowModal(false);
+  };
   return (
-    <div className="cards">
+    <div onClick={closeModall} onKeyDown={closeModall} className="cards">
       {state.map((item) => {
         return (
           <div className="card">
-            <img className="site-thumbnail" src={item.thumbnail} alt="" width={200} />
+            <img
+              className="site-thumbnail"
+              src={item.thumbnail}
+              alt=""
+              width={200}
+            />
             <h3 className="title">{item.title}</h3>
             <div className="old-rating">
               <p className="old-price">
@@ -441,7 +451,9 @@ const App = () => {
               </p>
               <p className="rating">
                 <span>
-                  <span className="sale-text"><b>Sale : </b></span>
+                  <span className="sale-text">
+                    <b>Sale : </b>
+                  </span>
                   <span className="sale"> {item.discountPercentage}%</span>
                 </span>
               </p>
@@ -462,7 +474,11 @@ const App = () => {
                 {item.rating} / 5
               </span>
             </div>
-            <div className="btns"><button className="open-btn" onClick={() => setShowModal(true)}>Open</button></div>
+            <div className="btns">
+              <button className="open-btn" onClick={() => setShowModal(true)}>
+                Open
+              </button>
+            </div>
           </div>
         );
       })}
